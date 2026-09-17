@@ -153,6 +153,16 @@ export interface TradingBot {
   recommendedPairs: string[];
 }
 
+export interface InvestorPackage {
+  id: string;
+  amount: number;
+  dailyRoiPercent: number;
+  dailyRoiAmount: number;
+  activatedDate: string;
+  txHash: string;
+  status: 'Active' | 'Settled';
+}
+
 export interface ClosedTrade {
   id: string;
   ticket: string;
